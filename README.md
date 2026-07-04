@@ -1,6 +1,20 @@
 # ResumeAI — AI-Powered Resume Analyzer
 
-A full-stack MERN application that uses the Google Gemini API to analyze resumes, score ATS compatibility, match job roles, generate interview questions, and suggest improvements.
+A full-stack MERN application that uses AI to analyze resumes, score ATS compatibility, match job roles, generate interview questions, and suggest improvements.
+
+🔗 **Live Demo:** [ai-resume-analyzer-thala1.vercel.app](https://ai-resume-analyzer-thala1.vercel.app)
+
+---
+
+## Screenshots
+
+| Home | Dashboard |
+|---|---|
+| ![Home](client/screenshots/home.png) | ![Dashboard](client/screenshots/dashboard.png) |
+
+| Upload | Analysis Results |
+|---|---|
+| ![Upload](client/screenshots/upload.png) | ![Analysis](client/screenshots/analysis.png) |
 
 ---
 
@@ -11,7 +25,7 @@ A full-stack MERN application that uses the Google Gemini API to analyze resumes
 | Frontend | React 18, Vite, Tailwind CSS v4, React Router v6 |
 | Backend | Node.js, Express.js, Mongoose |
 | Database | MongoDB Atlas |
-| AI | Google Gemini API (`@google/genai`) |
+| AI | Groq API (Llama 3.3 70B) |
 | Auth | JWT + bcryptjs |
 | File parsing | pdf-parse, mammoth |
 | Deploy | Vercel (frontend), Render (backend) |
@@ -82,7 +96,7 @@ npm run dev
 | `MONGO_URI` | MongoDB Atlas connection string |
 | `JWT_SECRET` | Random 64-character secret |
 | `JWT_EXPIRES_IN` | Token lifetime (e.g. `7d`) |
-| `GEMINI_API_KEY` | Google Gemini API key |
+| `GROQ_API_KEY` | Groq API key (console.groq.com) |
 | `CLIENT_URL` | Frontend origin for CORS |
 
 ### `client/.env`
